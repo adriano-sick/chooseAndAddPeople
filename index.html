@@ -1,0 +1,49 @@
+<!-- Adriano Siqueira - 8/14/2021 - Choose and add people -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="TossThenApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Choose and add people</title>
+
+        <!--AngularJS import  -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+        <!-- index.js import -->
+        <script type="text/javascript" src="./assets/js/app.js"></script>
+
+        <!-- Bootstrap import -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+
+        <!-- style.css import -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    </head>
+
+    <body ng-controller="MovePeopleController">
+        <h1>Example #6</h1>
+        <h1>Choose and add people</h1>
+        <hr>
+
+        <div class="click-these-area">
+            <h4 class="green-top">Click These</h4>
+            <div ng-repeat="leader in leaders">
+                <div class="highlight" ng-click="addThisOne(leader);">
+                    <img src="{{leader.pic}}"> {{leader.name}}
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="it-goes-here-area">
+            <h4 class="red-top">It Goes Here {{collection.length}}</h4>
+            <div ng-repeat="collect in collection">
+                <img src="{{collect.pic}}"> {{collect.name}}
+                <hr>
+            </div>
+        </div>
+    </body>
+
+</html>

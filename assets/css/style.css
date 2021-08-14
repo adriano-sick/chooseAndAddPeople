@@ -1,0 +1,45 @@
+/* Adriano Siqueira - 8/14/2021 - Choose and add people */
+
+.click-these-area {
+    width: 200px;
+    border: 5px solid green;
+}
+
+.click-these-area:hover {
+    opacity: 0.8;
+}
+
+.green-top {
+    background-color: green;
+    color: white;
+    padding: 3px 15px;
+}
+
+.highlight:hover {
+    opacity: 0.5;
+    font-size: 20px;
+    cursor: copy;
+}
+
+.it-goes-here-area {
+    width: 200px;
+    border: 5px solid red;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+}
+
+.red-top {
+    background-color: red;
+    color: white;
+    padding: 3px 15px;
+}
+
+img {
+    width: 60px;
+    border: 2px solid white;
+}
+
+hr {
+    margin: 5px 2px;
+}
