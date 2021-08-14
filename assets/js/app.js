@@ -7,7 +7,17 @@ app.controller("MovePeopleController", function($scope) {
     $scope.collection = [];
 
     $scope.addThisOne = function(leader) {
-        $scope.collection.push(leader);
+        if ($scope.collection.indexOf(leader) > -1) {
+            alert("This one it's already on list!!!")
+        }
+        else {
+            $scope.collection.push(leader);
+        }
+    }
+
+    $scope.removeThisOne = function(collect) {
+        let leaderIndex = $scope.collection.indexOf(collect);
+        $scope.collection.splice(leaderIndex, 1);    
     }
 
     $scope.leaders = [

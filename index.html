@@ -39,8 +39,8 @@
 
         <div class="it-goes-here-area">
             <h4 class="red-top">It Goes Here {{collection.length}}</h4>
-            <div ng-repeat="collect in collection">
-                <img src="{{collect.pic}}"> {{collect.name}}
+            <div class="highlight-red" ng-repeat="collect in collection" ng-click="removeThisOne(collect);">
+                <img src="{{collect.pic}}" > {{collect.name}}
                 <hr>
             </div>
         </div>

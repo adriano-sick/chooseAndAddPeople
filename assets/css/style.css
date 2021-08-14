@@ -29,6 +29,16 @@
     bottom: 30px;
 }
 
+.it-goes-here-area:hover {
+    opacity: 0.8;
+}
+
+.highlight-red:hover{
+    opacity: 0.5;
+    font-size: 20px;
+    cursor: alias;
+}
+
 .red-top {
     background-color: red;
     color: white;
